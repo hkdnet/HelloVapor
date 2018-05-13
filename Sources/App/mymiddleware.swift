@@ -6,8 +6,7 @@ public final class MyMiddleware: Middleware, ServiceType {
         return try .default(environment: worker.environment, log: worker.make())
     }
     
-    /// Create a default `ErrorMiddleware`. Logs errors to a `Logger` based on `Environment`
-    /// and converts `Error` to `Response` based on conformance to `AbortError` and `Debuggable`.
+    /// Create a default `MyMiddleware`.
     ///
     /// - parameters:
     ///     - environment: The environment to respect when presenting errors.
